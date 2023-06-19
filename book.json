@@ -1,7 +1,7 @@
 {
     "plugins":
     [
-        "code",
+        "highlight",
         "search-pro",
         "accordion",
         "expandable-chapters"

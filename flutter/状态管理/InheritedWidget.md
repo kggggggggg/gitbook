@@ -11,12 +11,13 @@
 ```dart
 class InheritedElement extends ProxyElement{
   @override
+  //stylebegin {background-color: #FFFF0050;}
   void updated(InheritedWidget oldWidget) {
     if ((widget as InheritedWidget).updateShouldNotify(oldWidget)) {
       super.updated(oldWidget); --会调用notifyClients
     }
   }
-  
+  //styleend
   @override
   void notifyClients(InheritedWidget oldWidget) {
     assert(_debugCheckOwnerBuildTargetExists('notifyClients'));
@@ -27,7 +28,7 @@ class InheritedElement extends ProxyElement{
         while (ancestor != this && ancestor != null) {
           ancestor = ancestor._parent;
         }
-        return ancestor == this;
+        return ancestor == this; 
       }());
       // check that it really depends on us
       assert(dependent._dependencies!.contains(this));
