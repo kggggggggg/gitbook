@@ -743,6 +743,18 @@ class MyHomePage extends StatelessWidget {
 
 
 
+# layz
+
+
+
+# 防止重复刷新
+
+
+
+
+
+
+
 # 参考
 
 [proxy-provider](https://flutterbyexample.com/lesson/what-is-provider)
