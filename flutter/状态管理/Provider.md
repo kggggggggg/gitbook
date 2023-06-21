@@ -513,85 +513,13 @@ PA的child是PB。PB的child是PC。PC的child是XXX。
 
 ### .value constructors
 
-使用 `.value` 方法时，需要注意以下几点：
-
-- `.value` 方法只能用于提供一个已经存在的数据对象，而不能用于创建新的数据对象。
-- 由于数据对象是固定的，不会在后续的变化中更新，因此在使用 `.value` 方法时，不会触发依赖于该 Provider 的组件的重新构建。
-- `.value` 方法通常用于提供简单的数值或常量，而不适用于需要动态变化或需要管理状态的场景。
+之前使用Provider时候，都是使用create()进行创建一个新值，倘若我们想要观测一个已经存在的实例化对象时候，就不可以这样了。
+这时候需要使用Provider.value的方式或者其它类的.value,例如ChangeNotifierProvider.value
+该方法也可以将内部的某个值提供给其子类
 
 
 
 总结：在 Provider 中，`.value` 方法用于手动提供一个固定的数值作为数据源，而不使用 Provider 类自动创建或管理数据源。
-
-
-
-```dart
-import 'dart:collection';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-
-class Person with ChangeNotifier {
-  Person({this.name, this.age});
-
-  final String name;
-  int age;
-
-  void increaseAge() {
-    this.age++;
-    notifyListeners();
-  }
-}
-
-void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (_) => Person(name: "Yohan", age: 25),
-      child: MyApp(),
-    ),
-  );
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Provider Class'),
-      ),
-      body: Center(
-        child: PersonsNameLabel(),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => Provider.of<Person>(context, listen: false).increaseAge(),
-      ),
-    );
-  }
-}
-
-class PersonsNameLabel extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Provider<String>.value(
-      value: Provider.of<Person>(context).name,
-      builder: (BuildContext context, Widget child) {
-        return Text(context.watch<String>());
-      },
-    );
-  }
-}
-
-```
 
 
 
@@ -756,6 +684,8 @@ class MyHomePage extends StatelessWidget {
 
 
 # 参考
+
+[README](https://github.com/rrousselGit/provider/blob/master/resources/translations/zh-CN/README.md)
 
 [proxy-provider](https://flutterbyexample.com/lesson/what-is-provider)
 

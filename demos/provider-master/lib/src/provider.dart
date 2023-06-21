@@ -13,7 +13,13 @@ import 'reassemble_handler.dart';
 
 part 'deferred_inherited_provider.dart';
 part 'devtool.dart';
-part 'inherited_provider.dart';
+part 'inherited_provider/inherited_provider.dart';
+part 'inherited_provider/inherited_provider_common.dart';
+part 'inherited_provider/inherited_provider_delegate.dart';
+part 'inherited_provider/inherited_provider_select_context.dart';
+part 'inherited_provider/inherited_provider_scope.dart';
+part 'inherited_provider/inherited_provider_create_delegate.dart';
+part 'inherited_provider/inherited_provider_value_delegate.dart';
 
 /// Whether the runtime has null safe sound mode enabled.
 ///
