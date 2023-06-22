@@ -2,9 +2,12 @@
     "plugins":
     [
         "highlight",
-        "search-pro",
+        "search-plus",
         "accordion",
-        "expandable-chapters"
+        "expandable-chapters",
+        "chapter-fold",
+        "-simple-page-toc",
+        "page-toc-button"
     ],
     "pluginsConfig":
     {
@@ -14,6 +17,16 @@
             [
                 ".gitbook-link"
             ]
+        },
+        "simple-page-toc":
+        {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+        "page-toc-button":
+        {
+            "maxDepth": 6,
+            "minTocSize": 2
         }
     }
 }
