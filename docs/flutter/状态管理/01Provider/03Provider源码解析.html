@@ -1,0 +1,914 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>03Provider源码解析 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="02Provider基本使用.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    sorting
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../algorithm/sorting/selection_sort.html">
+            
+                <a href="../../../algorithm/sorting/selection_sort.html">
+            
+                    
+                    选择排序 selection sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../algorithm/sorting/merge_sort.html">
+            
+                <a href="../../../algorithm/sorting/merge_sort.html">
+            
+                    
+                    归并排序 merge sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../../algorithm/sorting/quick_sort.html">
+            
+                <a href="../../../algorithm/sorting/quick_sort.html">
+            
+                    
+                    快速排序算法 quicksort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../algorithm/sorting/bubble_sort.html">
+            
+                <a href="../../../algorithm/sorting/bubble_sort.html">
+            
+                    
+                    冒泡排序 bubble sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../../algorithm/sorting/insertion_sort.html">
+            
+                <a href="../../../algorithm/sorting/insertion_sort.html">
+            
+                    
+                    插入排序 insertion sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../algorithm/sorting.html">
+            
+                <a href="../../../algorithm/sorting.html">
+            
+                    
+                    排序算法 sorting algorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../00前言.html">
+            
+                <a href="../00前言.html">
+            
+                    
+                    flutter的状态管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../00前言.html">
+            
+                <a href="../00前言.html">
+            
+                    
+                    flutter的状态管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../00前言.html">
+            
+                <a href="../00前言.html">
+            
+                    
+                    flutter的状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" >
+            
+                <span>
+            
+                    
+                    01Provider
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="01InheritedWidget.html">
+            
+                <a href="01InheritedWidget.html">
+            
+                    
+                    01InheritedWidget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="02Provider基本使用.html">
+            
+                <a href="02Provider基本使用.html">
+            
+                    
+                    02Provider基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.2.3" data-path="03Provider源码解析.html">
+            
+                <a href="03Provider源码解析.html">
+            
+                    
+                    03Provider源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >03Provider源码解析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="provider">Provider</h1>
+<p>&#x4ECE;&#x6700;&#x57FA;&#x7840;&#x7684;<code>InheritedProvider</code>&#x5F00;&#x59CB;&#x5206;&#x6790;&#x3002;&#x4E86;&#x89E3;&#x4E86;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x53EA;&#x662F;&#x518D;&#x8D77;&#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x4E86;&#x5185;&#x5BB9;&#x4E30;&#x5BCC;&#x3002;</p>
+<h1 id="1-inheritedprovider">1. InheritedProvider</h1>
+<h2 id="11-class-inheritedprovidert">1.1 class InheritedProvider&lt;T&gt;</h2>
+<p>&#x7CBE;&#x7B80;&#x4EE3;&#x7801;&#x4E4B;&#x540E;&#x5982;&#x4E0B;&#x3002;&#x91CD;&#x70B9;&#x6CE8;&#x91CA;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InheritedProvider</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">SingleChildStatelessWidget</span> </span>{
+
+  <span class="hljs-comment">//&lt;hl&gt; 1. &#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+  InheritedProvider({
+    Key? key,
+    Create&lt;T&gt;? create,   <span class="hljs-comment">//&lt;hl&gt; &#x7528;&#x6765;&#x521B;&#x5EFA;Provider&#x6301;&#x6709;&#x7684;&#x5BF9;&#x8C61;</span>
+    T <span class="hljs-built_in">Function</span>(BuildContext context, T? value)? update, <span class="hljs-comment">//&lt;hl&gt; &#x5F53;&#x524D;Provider&#x66F4;&#x65B0;&#x65F6;&#x89E6;&#x53D1;&#x3002;</span>
+    <span class="hljs-comment">//&lt;hl&gt; Provider&#x66F4;&#x65B0;&#x65F6;,&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x5B9A;&#x53D8;&#x5316;&#xFF0C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x9700;&#x8981;&#x901A;&#x77E5;&#x89C2;&#x5BDF;&#x8005;&#x66F4;&#x65B0;&#x3002;</span>
+    UpdateShouldNotify&lt;T&gt;? updateShouldNotify, 
+    <span class="hljs-comment">//&lt;hl&gt; &#x7B2C;&#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53D6;&#x6D88;&#x8BA2;&#x9605;&#x7684;&#x76D1;&#x542C;</span>
+    StartListening&lt;T&gt;? startListening, 
+    Dispose&lt;T&gt;? dispose, <span class="hljs-comment">//&#x4ECE;widget tree&#x4E2D;&#x79FB;&#x9664;&#x7684;&#x65F6;&#x5019;&#x8C03;&#x7528;</span>
+    <span class="hljs-keyword">this</span>.builder, <span class="hljs-comment">//&#x6784;&#x9020;&#x8BED;&#x6CD5;&#x7CD6;</span>
+    <span class="hljs-built_in">bool</span>? lazy, <span class="hljs-comment">// create&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x61D2;&#x52A0;&#x8F7D;</span>
+    Widget? child,
+  })  : _lazy = lazy,
+              <span class="hljs-comment">//&#x5C06;&#x4E0A;&#x9762;&#x7684;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x4EE3;&#x7406;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x7684;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;</span>
+        _delegate = _CreateInheritedProvider(
+          create: create,
+          update: update,
+          updateShouldNotify: updateShouldNotify,
+          startListening: startListening,
+          dispose: dispose,
+        ),
+        <span class="hljs-keyword">super</span>(key: key, child: child);
+
+  <span class="hljs-keyword">final</span> _Delegate&lt;T&gt; _delegate;
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">bool</span>? _lazy;
+  <span class="hljs-keyword">final</span> TransitionBuilder? builder;
+
+  <span class="hljs-meta">@override</span>
+  Widget buildWithChild(BuildContext context, Widget? child) {
+    <span class="hljs-comment">//&#x6839;&#x5E03;&#x5C40;&#x662F; _InheritedProviderScope&#x3002;</span>
+    <span class="hljs-keyword">return</span> _InheritedProviderScope&lt;T?&gt;(
+      owner: <span class="hljs-keyword">this</span>,
+      child: builder != <span class="hljs-keyword">null</span>
+          ? Builder(
+              builder: (context) =&gt; builder!(context, child),
+            )
+          : child!,
+    );
+  }
+}
+</code></pre>
+<h2 id="12-class-inheritedproviderscopet">1.2 class _InheritedProviderScope&lt;T&gt;</h2>
+<p>&#x5176;&#x4E2D;&#x90E8;&#x5206;&#x64CD;&#x4F5C;&#x4F1A;&#x8BA9;delegate&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x529F;&#x80FD;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x3002;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_InheritedProviderScope</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedWidget</span> </span>{
+  <span class="hljs-keyword">const</span> _InheritedProviderScope({
+    required <span class="hljs-keyword">this</span>.owner,
+    required <span class="hljs-keyword">this</span>.debugType,
+    required Widget child,
+  })  : <span class="hljs-keyword">assert</span>(<span class="hljs-keyword">null</span> <span class="hljs-keyword">is</span> T),
+        <span class="hljs-keyword">super</span>(child: child);
+
+  <span class="hljs-keyword">final</span> InheritedProvider&lt;T&gt; owner; <span class="hljs-comment">//&#x5BF9;&#x5E94;&#x7684;InheritedProvider&#x3002;&#x5176;&#x5B9E;&#x662F;&#x7236;widget</span>
+
+  <span class="hljs-comment">//&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x662F;&#x5426;&#x901A;&#x77E5;&#x66F4;&#x65B0;&#x4F7F;&#x7528;InheritedProvider&#x4F20;&#x5165;&#x7684;updateShouldNotify</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-built_in">bool</span> updateShouldNotify(InheritedWidget oldWidget) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+  }
+
+  <span class="hljs-comment">//&#x521B;&#x5EFA;element</span>
+  <span class="hljs-meta">@override</span>
+  _InheritedProviderScopeElement&lt;T&gt; createElement() {
+    <span class="hljs-keyword">return</span> _InheritedProviderScopeElement&lt;T&gt;(<span class="hljs-keyword">this</span>);
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_InheritedProviderScopeElement</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedElement</span>
+    <span class="hljs-keyword">implements</span> <span class="hljs-title">InheritedContext</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+  _InheritedProviderScopeElement(_InheritedProviderScope&lt;T&gt; widget)
+      : <span class="hljs-keyword">super</span>(widget);
+
+  <span class="hljs-keyword">static</span> <span class="hljs-built_in">int</span> _nextProviderId = <span class="hljs-number">0</span>;
+
+  <span class="hljs-built_in">bool</span> _shouldNotifyDependents = <span class="hljs-keyword">false</span>;
+  <span class="hljs-built_in">bool</span> _debugInheritLocked = <span class="hljs-keyword">false</span>;
+  <span class="hljs-built_in">bool</span> _isNotifyDependentsEnabled = <span class="hljs-keyword">true</span>;
+  <span class="hljs-built_in">bool</span> _updatedShouldNotify = <span class="hljs-keyword">false</span>;
+  <span class="hljs-built_in">bool</span> _isBuildFromExternalSources = <span class="hljs-keyword">false</span>;
+  late <span class="hljs-keyword">final</span> _DelegateState&lt;T, _Delegate&lt;T&gt;&gt; _delegateState =
+      widget.owner._delegate.createState()..element = <span class="hljs-keyword">this</span>;
+
+  <span class="hljs-meta">@override</span>
+  InheritedElement? getElementForInheritedWidgetOfExactType&lt;
+      InheritedWidgetType <span class="hljs-keyword">extends</span> InheritedWidget&gt;() {
+    InheritedElement? inheritedElement;
+    <span class="hljs-comment">// &#x5C1D;&#x8BD5;&#x5728;&#x7236;&#x5E03;&#x5C40;&#x4E2D;&#x83B7;&#x53D6;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;Provider&#x3002;</span>
+    visitAncestorElements((parent) {
+      inheritedElement =
+          parent.getElementForInheritedWidgetOfExactType&lt;InheritedWidgetType&gt;();
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    });
+    <span class="hljs-keyword">return</span> inheritedElement;
+  }
+
+  <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x89C2;&#x5BDF;&#x8005;</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> updateDependencies(<span class="hljs-built_in">Element</span> dependent, <span class="hljs-built_in">Object</span>? aspect) {
+    <span class="hljs-keyword">final</span> dependencies = getDependencies(dependent);
+
+    <span class="hljs-comment">//&#x53EF;&#x4EE5;&#x67E5;&#x770B; SelectContext</span>
+    <span class="hljs-comment">//typedef _SelectorAspect&lt;T&gt; = bool Function(T value); </span>
+    <span class="hljs-comment">//aspect&#x662F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x5219;&#x6CE8;&#x518C;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;Selector&#x7C7B;&#x578B;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x3002;</span>
+    <span class="hljs-comment">//&#x901A;&#x8FC7;SelectContext&#x4E2D;&#x7684;context.select &#x65B9;&#x5F0F;</span>
+    <span class="hljs-keyword">if</span> (aspect <span class="hljs-keyword">is</span> _SelectorAspect&lt;T&gt;) {
+      <span class="hljs-comment">//selectorDependency&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x5BB9;&#x5668;&#x3002;</span>
+      <span class="hljs-keyword">final</span> selectorDependency =
+          (dependencies ?? _Dependency&lt;T&gt;()) <span class="hljs-keyword">as</span> _Dependency&lt;T&gt;;
+      selectorDependency.selectors.add(aspect);
+      <span class="hljs-comment">//&#x5B58;&#x50A8;&#x89C2;&#x5BDF;&#x8005;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;selectorDependency</span>
+      setDependencies(dependent, selectorDependency);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">//&#x5B58;&#x50A8;&#x89C2;&#x5BDF;&#x8005;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;Object&#x3002;</span>
+      setDependencies(dependent, <span class="hljs-keyword">const</span> <span class="hljs-built_in">Object</span>());
+    }
+  }
+
+  <span class="hljs-comment">//&#x901A;&#x77E5;&#x4F9D;&#x8D56;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x6267;&#x884C;&#x66F4;&#x65B0;</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> notifyDependent(InheritedWidget oldWidget, <span class="hljs-built_in">Element</span> dependent) {
+    <span class="hljs-keyword">final</span> dependencies = getDependencies(dependent);
+
+    <span class="hljs-keyword">var</span> shouldNotify = <span class="hljs-keyword">false</span>;
+    <span class="hljs-keyword">if</span> (dependencies != <span class="hljs-keyword">null</span>) {
+      <span class="hljs-comment">//&#x53EF;&#x4EE5;&#x67E5;&#x770B; SelectContext</span>
+      <span class="hljs-comment">//_Dependency&#x7C7B;&#x578B;&#xFF0C;&#x6267;&#x884C;&#x5B58;&#x50A8;&#x7684;select&#x65B9;&#x6CD5;&#x3002;</span>
+      <span class="hljs-keyword">if</span> (dependencies <span class="hljs-keyword">is</span> _Dependency&lt;T&gt;) {...}
+
+    <span class="hljs-keyword">if</span> (shouldNotify) {
+      <span class="hljs-comment">//&#x89C2;&#x5BDF;&#x8005;&#x66F4;&#x65B0;&#x3002;</span>
+      dependent.didChangeDependencies();
+    }
+  }
+
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> update(_InheritedProviderScope&lt;T&gt; newWidget) {
+    _isBuildFromExternalSources = <span class="hljs-keyword">true</span>;
+        <span class="hljs-comment">//&#x901A;&#x77E5;delegate&#x6267;&#x884C; willUpdateDelegate</span>
+    _updatedShouldNotify =
+        _delegateState.willUpdateDelegate(newWidget.owner._delegate);
+    <span class="hljs-keyword">super</span>.update(newWidget);
+    _updatedShouldNotify = <span class="hljs-keyword">false</span>;
+  }
+
+  <span class="hljs-comment">//&#x56E0;&#x4E3A;&#x91CD;&#x5199;&#x4E86; bool updateShouldNotify(InheritedWidget oldWidget)  &#x903B;&#x8F91;&#x3002;</span>
+  <span class="hljs-comment">//&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x91CD;&#x5199;updated&#x3002;&#x4F7F;&#x7528;_updatedShouldNotify&#x5224;&#x65AD;&#x662F;&#x5426;&#x901A;&#x77E5;&#x66F4;&#x65B0;</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> updated(InheritedWidget oldWidget) {
+    <span class="hljs-keyword">super</span>.updated(oldWidget);
+    <span class="hljs-keyword">if</span> (_updatedShouldNotify) {
+      notifyClients(oldWidget);
+    }
+  }
+
+  <span class="hljs-meta">@override</span>
+  Widget build() {
+    <span class="hljs-keyword">if</span> (widget.owner._lazy == <span class="hljs-keyword">false</span>) {
+      <span class="hljs-comment">//&#x975E;&#x61D2;&#x52A0;&#x8F7D;&#xFF0C;&#x6267;&#x884C;&#x4E00;&#x6B21;getter&#x65B9;&#x6CD5;&#x3002;</span>
+      value; 
+    }
+    <span class="hljs-comment">//&#x901A;&#x77E5;&#x4EE3;&#x7406;&#x6267;&#x884C; build &#x65B9;&#x6CD5;&#x3002;</span>
+    _delegateState.build(
+      isBuildFromExternalSources: _isBuildFromExternalSources,
+    );
+    _isBuildFromExternalSources = <span class="hljs-keyword">false</span>;
+    <span class="hljs-comment">//&#x4EE3;&#x7406;&#x7684;build&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5BF9;_shouldNotifyDependents&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#xFF0C;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x8981;&#x8C03;&#x7528;notifyClients</span>
+    <span class="hljs-keyword">if</span> (_shouldNotifyDependents) {
+      _shouldNotifyDependents = <span class="hljs-keyword">false</span>;
+      notifyClients(widget);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.build();
+  }
+
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> unmount() {
+    <span class="hljs-comment">//&#x8C03;&#x7528;&#x4EE3;&#x7406;&#x7684;dispose</span>
+    _delegateState.dispose();
+    <span class="hljs-keyword">super</span>.unmount();
+  }
+
+  <span class="hljs-comment">//&#x83B7;&#x53D6;value&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4EA4;&#x7ED9;&#x4EE3;&#x7406;&#x6267;&#x884C;&#x3002;</span>
+  <span class="hljs-meta">@override</span>
+  T <span class="hljs-keyword">get</span> value =&gt; _delegateState.value;
+}
+</code></pre>
+<h2 id="13-delegate-delegatestate">1.3. _Delegate _DelegateState</h2>
+<h3 id="131-&#x534F;&#x8BAE;">1.3.1 &#x534F;&#x8BAE;</h3>
+<pre><code class="lang-dart"><span class="hljs-meta">@immutable</span>
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_Delegate</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+  _DelegateState&lt;T, _Delegate&lt;T&gt;&gt; createState();
+
+  <span class="hljs-keyword">void</span> debugFillProperties(DiagnosticPropertiesBuilder properties) {}
+}
+
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_DelegateState</span>&lt;<span class="hljs-title">T</span>, <span class="hljs-title">D</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">_Delegate</span>&lt;<span class="hljs-title">T</span>&gt;&gt; </span>{
+  _InheritedProviderScopeElement&lt;T?&gt;? element;
+
+  <span class="hljs-comment">//&#x7528;&#x6765;&#x83B7;&#x53D6;provider&#x6301;&#x6709;&#x7684;&#x503C;</span>
+  T <span class="hljs-keyword">get</span> value;
+
+  <span class="hljs-comment">//&#x5176;&#x5B9E;&#x5C31;&#x662F; _Delegate&lt;T&gt;</span>
+  D <span class="hljs-keyword">get</span> delegate =&gt; element!.widget.owner._delegate <span class="hljs-keyword">as</span> D;
+
+  <span class="hljs-comment">//&#x662F;&#x5426;&#x6709;&#x503C;&#xFF0C;&#x5BF9;&#x4E8E;_CreateInheritedProvider&#x6765;&#x8BF4;&#x662F;&#x6267;&#x884C;&#x4E86;create&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x4E8E;_ValueInheritedProvider&#x59CB;&#x7EC8;&#x662F;true&#x3002;</span>
+  <span class="hljs-built_in">bool</span> <span class="hljs-keyword">get</span> hasValue;
+
+  <span class="hljs-built_in">bool</span> debugSetInheritedLock(<span class="hljs-built_in">bool</span> value) {
+    <span class="hljs-keyword">return</span> element!._debugSetInheritedLock(value);
+  }
+
+  <span class="hljs-built_in">bool</span> willUpdateDelegate(D newDelegate) =&gt; <span class="hljs-keyword">false</span>;
+
+  <span class="hljs-comment">//_InheritedProviderScopeElement &#x6267;&#x884C; unmount&#x65B9;&#x6CD5;&#x3002;</span>
+  <span class="hljs-keyword">void</span> dispose() {}
+
+  <span class="hljs-keyword">void</span> debugFillProperties(DiagnosticPropertiesBuilder properties) {}
+
+  <span class="hljs-comment">//_InheritedProviderScopeElement &#x6267;&#x884C; build&#x65B9;&#x6CD5;</span>
+  <span class="hljs-keyword">void</span> build({required <span class="hljs-built_in">bool</span> isBuildFromExternalSources}) {}
+}
+</code></pre>
+<h3 id="132-createinheritedprovider">1.3.2 _CreateInheritedProvider</h3>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_CreateInheritedProvider</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">_Delegate</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+
+  <span class="hljs-meta">@override</span>
+  _CreateInheritedProviderState&lt;T&gt; createState() =&gt;
+      _CreateInheritedProviderState();
+
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_CreateInheritedProviderState</span>&lt;<span class="hljs-title">T</span>&gt;
+    <span class="hljs-keyword">extends</span> <span class="hljs-title">_DelegateState</span>&lt;<span class="hljs-title">T</span>, <span class="hljs-title">_CreateInheritedProvider</span>&lt;<span class="hljs-title">T</span>&gt;&gt; </span>{
+
+  <span class="hljs-comment"><span class="markdown">////_InheritedProviderScopeElement&#x7684; &#x53D6;&#x503C;&#x64CD;&#x4F5C; &#x8C03;&#x7528;&#x8FD9;&#x91CC;&#x3002;</span></span>
+  <span class="hljs-meta">@override</span>
+  T <span class="hljs-keyword">get</span> value {
+
+    <span class="hljs-built_in">bool</span>? _debugPreviousIsInInheritedProviderCreate;
+    <span class="hljs-built_in">bool</span>? _debugPreviousIsInInheritedProviderUpdate;
+
+    <span class="hljs-comment">//_didInitValue &#x8868;&#x793A;&#x662F;&#x5426;&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6210;Value&#x3002;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6267;&#x884C;&#x4E00;&#x6B21; get value</span>
+    <span class="hljs-keyword">if</span> (!_didInitValue) {
+      _didInitValue = <span class="hljs-keyword">true</span>;
+      <span class="hljs-keyword">if</span> (delegate.create != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-comment">//&#x6267;&#x884C;create&#x65B9;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x503C;</span>
+        _value = delegate.create!(element!);
+      }
+      <span class="hljs-keyword">if</span> (delegate.update != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-comment">//&#x6267;&#x884C;update&#x65B9;&#x6CD5;&#xFF0C;&#x66F4;&#x65B0;&#x503C;</span>
+        _value = delegate.update!(element!, _value);
+      }
+    }
+        <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x503C;</span>
+    <span class="hljs-keyword">return</span> _value <span class="hljs-keyword">as</span> T;
+  }
+
+  <span class="hljs-comment">//_InheritedProviderScopeElement&#x7684;dispose&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8FD9;&#x91CC;&#x3002;</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> dispose() {
+    <span class="hljs-keyword">super</span>.dispose();
+    _removeListener?.call();
+    <span class="hljs-keyword">if</span> (_didInitValue) {
+      <span class="hljs-comment">//&#x6267;&#x884C;dispose&#x65B9;&#x6CD5;</span>
+      delegate.dispose?.call(element!, _value <span class="hljs-keyword">as</span> T);
+    }
+  }
+
+  <span class="hljs-comment">//_InheritedProviderScopeElement&#x7684;build&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8FD9;&#x91CC;&#x3002;</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> build({required <span class="hljs-built_in">bool</span> isBuildFromExternalSources}) {
+    <span class="hljs-keyword">var</span> shouldNotify = <span class="hljs-keyword">false</span>;
+    <span class="hljs-keyword">if</span> (isBuildFromExternalSources &amp;&amp;
+        _didInitValue &amp;&amp;
+        delegate.update != <span class="hljs-keyword">null</span>) {
+      <span class="hljs-keyword">final</span> previousValue = _value;
+
+      <span class="hljs-comment">//&#x901A;&#x8FC7;delegate._updateShouldNotify&#x6216;&#x8005;&#x524D;&#x540E;&#x503C;&#x662F;&#x5426;&#x76F8;&#x7B49;</span>
+      _value = delegate.update!(element!, _value <span class="hljs-keyword">as</span> T); <span class="hljs-comment">//update&#x5B9E;&#x73B0;&#x7684;&#x524D;&#x63D0;&#x4E0B;</span>
+      <span class="hljs-keyword">if</span> (delegate._updateShouldNotify != <span class="hljs-keyword">null</span>) {
+        shouldNotify = delegate._updateShouldNotify!(
+          previousValue <span class="hljs-keyword">as</span> T,
+          _value <span class="hljs-keyword">as</span> T,
+        );
+      } <span class="hljs-keyword">else</span> {
+        shouldNotify = _value != previousValue;
+      }
+    }
+
+
+    <span class="hljs-keyword">if</span> (shouldNotify) {
+      <span class="hljs-comment">//&#x8FD9;&#x91CC;&#x7B49;&#x4E8E;true&#x3002;_InheritedProviderScopeElement&#x7684;build&#x79CD;&#x4F1A;&#x6267;&#x884C; notifyClients(widget);</span>
+      element!._shouldNotifyDependents = <span class="hljs-keyword">true</span>;
+    }
+  }
+
+}
+</code></pre>
+<h2 id="14-&#x603B;&#x7ED3;">1.4 &#x603B;&#x7ED3;</h2>
+<p>&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;Provider&#x90FD;&#x662F;&#x5728;&#x8FD9;&#x4E2A;&#x57FA;&#x7840;&#x4E0A;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x4E86;&#x89E3;&#x4E86;<code>InheritedProvider</code>&#x5176;&#x4ED6;&#x7684;&#x5C31;&#x5F88;&#x7B80;&#x5355;&#x4E86;&#x3002;</p>
+<h1 id="2-provider">2. Provider</h1>
+<p><code>Provider</code>&#x4E3A;<code>InheritedProvider</code>&#x63D0;&#x4F9B;&#x4E86;.of&#x65B9;&#x6CD5;&#x3002;&#x4FBF;&#x4E8E;&#x5FEB;&#x901F;&#x53D6;&#x503C;</p>
+<pre><code class="lang-dart">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Provider</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedProvider</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+  <span class="hljs-comment">//&#x63D0;&#x4F9B; .of &#x5FEB;&#x901F;&#x83B7;&#x53D6;value&#x3002;</span>
+  <span class="hljs-keyword">static</span> T of&lt;T&gt;(BuildContext context, {<span class="hljs-built_in">bool</span> listen = <span class="hljs-keyword">true</span>}) {
+    <span class="hljs-keyword">final</span> inheritedElement = _inheritedElementOf&lt;T&gt;(context);
+    <span class="hljs-keyword">if</span> (listen) {
+      context.dependOnInheritedWidgetOfExactType&lt;_InheritedProviderScope&lt;T?&gt;&gt;();
+    }
+    <span class="hljs-keyword">final</span> value = inheritedElement?.value;
+    <span class="hljs-keyword">return</span> value <span class="hljs-keyword">as</span> T;
+  }
+
+  <span class="hljs-keyword">static</span> _InheritedProviderScopeElement&lt;T?&gt;? _inheritedElementOf&lt;T&gt;(
+    BuildContext context,
+  ) {
+    <span class="hljs-keyword">final</span> inheritedElement = context.getElementForInheritedWidgetOfExactType&lt;
+        _InheritedProviderScope&lt;T?&gt;&gt;() <span class="hljs-keyword">as</span> _InheritedProviderScopeElement&lt;T?&gt;?;
+    <span class="hljs-keyword">return</span> inheritedElement;
+  }
+}
+</code></pre>
+<h1 id="3-listenableprovider">3. ListenableProvider</h1>
+<p><code>ChangeNotifierProvider</code>&#x7EE7;&#x627F;&#x81EA;<code>ListenableProvider</code>&#x3002;&#x5148;&#x770B;<code>ListenableProvider</code></p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListenableProvider</span>&lt;<span class="hljs-title">T</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Listenable</span>?&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedProvider</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+
+  ListenableProvider({
+    Key? key,
+    required Create&lt;T&gt; create,
+    Dispose&lt;T&gt;? dispose,
+    <span class="hljs-built_in">bool</span>? lazy,
+    TransitionBuilder? builder,
+    Widget? child,
+  }) : <span class="hljs-keyword">super</span>(
+          key: key,
+          startListening: _startListening,
+          create: create,
+          dispose: dispose,
+          lazy: lazy,
+          builder: builder,
+          child: child,
+        );
+
+  <span class="hljs-comment">//&#x5B9E;&#x73B0;&#x4E86;startListening&#x3002;</span>
+  <span class="hljs-keyword">static</span> VoidCallback _startListening(
+    InheritedContext&lt;Listenable?&gt; e,
+    Listenable? value,
+  ) {
+    <span class="hljs-comment">//&#x56E0;&#x4E3A;&#x6CDB;&#x578B;&#x7EA6;&#x675F; &lt;T extends Listenable?&gt;</span>
+    <span class="hljs-comment">//&#x6240;&#x4EE5;value&#x6DFB;&#x52A0;&#x76D1;&#x542C;&#x3002;&#x65B9;&#x6CD5;&#x662F; markNeedsNotifyDependents&#x3002;&#x5B9E;&#x73B0;&#x5982;&#x4E0B;</span>
+    value?.addListener(e.markNeedsNotifyDependents);
+    <span class="hljs-comment">//dispose&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x79FB;&#x9664;&#x76D1;&#x542C;</span>
+    <span class="hljs-keyword">return</span> () =&gt; value?.removeListener(e.markNeedsNotifyDependents);
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_InheritedProviderScopeElement</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedElement</span>
+    <span class="hljs-keyword">implements</span> <span class="hljs-title">InheritedContext</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+    <span class="hljs-meta">@override</span>
+  <span class="hljs-comment">//markNeedsNotifyDependents&#x5B9E;&#x73B0;&#x3002;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x8C03;&#x7528; markNeedsBuild &#x6267;&#x884C;&#x5237;&#x65B0;</span>
+  <span class="hljs-keyword">void</span> markNeedsNotifyDependents() {
+    <span class="hljs-keyword">if</span> (!_isNotifyDependentsEnabled) {
+      <span class="hljs-keyword">return</span>;
+    }
+
+    markNeedsBuild();
+    _shouldNotifyDependents = <span class="hljs-keyword">true</span>;
+  }
+}
+</code></pre>
+<h1 id="4-changenotifierprovider">4. ChangeNotifierProvider</h1>
+<p><code>ChangeNotifierProvider</code>&#x53EA;&#x662F;&#x4FEE;&#x6539;&#x4E86;ListenableProvider&#x7684;_dispose&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChangeNotifierProvider</span>&lt;<span class="hljs-title">T</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ChangeNotifier</span>?&gt;
+    <span class="hljs-keyword">extends</span> <span class="hljs-title">ListenableProvider</span>&lt;<span class="hljs-title">T</span>&gt; </span>{ 
+
+  ChangeNotifierProvider({
+    Key? key,
+    required Create&lt;T&gt; create,
+    <span class="hljs-built_in">bool</span>? lazy,
+    TransitionBuilder? builder,
+    Widget? child,
+  }) : <span class="hljs-keyword">super</span>(
+          key: key,
+          create: create,
+          dispose: _dispose,
+          lazy: lazy,
+          builder: builder,
+          child: child,
+        );
+
+  <span class="hljs-comment">//&#x6267;&#x884C;ChangeNotifier &#x7684; dispose</span>
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> _dispose(BuildContext context, ChangeNotifier? notifier) {
+    notifier?.dispose();
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02Provider基本使用.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 02Provider基本使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"03Provider源码解析","level":"1.3.1.2.3","depth":4,"previous":{"title":"02Provider基本使用","level":"1.3.1.2.2","depth":4,"path":"flutter/状态管理/01Provider/02Provider基本使用.md","ref":"flutter/状态管理/01Provider/02Provider基本使用.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search-plus","accordion","expandable-chapters","chapter-fold","-simple-page-toc","page-toc-button"],"pluginsConfig":{"chapter-fold":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxDepth":6,"minTocSize":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flutter/状态管理/01Provider/03Provider源码解析.md","mtime":"2023-06-22T10:48:16.562Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-22T12:11:07.258Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
