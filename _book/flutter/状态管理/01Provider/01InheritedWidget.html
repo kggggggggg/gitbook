@@ -1,0 +1,832 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01InheritedWidget · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02Provider基本使用.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    algorithm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    sorting
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../algorithm/sorting/selection_sort.html">
+            
+                <a href="../../../algorithm/sorting/selection_sort.html">
+            
+                    
+                    选择排序 selection sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../algorithm/sorting/merge_sort.html">
+            
+                <a href="../../../algorithm/sorting/merge_sort.html">
+            
+                    
+                    归并排序 merge sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../../algorithm/sorting/quick_sort.html">
+            
+                <a href="../../../algorithm/sorting/quick_sort.html">
+            
+                    
+                    快速排序算法 quicksort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../algorithm/sorting/bubble_sort.html">
+            
+                <a href="../../../algorithm/sorting/bubble_sort.html">
+            
+                    
+                    冒泡排序 bubble sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../../algorithm/sorting/insertion_sort.html">
+            
+                <a href="../../../algorithm/sorting/insertion_sort.html">
+            
+                    
+                    插入排序 insertion sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../algorithm/sorting.html">
+            
+                <a href="../../../algorithm/sorting.html">
+            
+                    
+                    排序算法 sorting algorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../00前言.html">
+            
+                <a href="../00前言.html">
+            
+                    
+                    flutter的状态管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../00前言.html">
+            
+                <a href="../00前言.html">
+            
+                    
+                    flutter的状态管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../00前言.html">
+            
+                <a href="../00前言.html">
+            
+                    
+                    flutter的状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" >
+            
+                <span>
+            
+                    
+                    01Provider
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1.2.1" data-path="01InheritedWidget.html">
+            
+                <a href="01InheritedWidget.html">
+            
+                    
+                    01InheritedWidget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="02Provider基本使用.html">
+            
+                <a href="02Provider基本使用.html">
+            
+                    
+                    02Provider基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="03Provider源码解析.html">
+            
+                <a href="03Provider源码解析.html">
+            
+                    
+                    03Provider源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >01InheritedWidget</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1-inheritedwidget&#x7684;&#x4F7F;&#x7528;">1. InheritedWidget&#x7684;&#x4F7F;&#x7528;</h1>
+<p>&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>ShareDataWidget</code>&#x7EE7;&#x627F;&#x81EA;<code>InheritedWidget</code></p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShareDataWidget</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedWidget</span> </span>{
+  <span class="hljs-keyword">const</span> ShareDataWidget({
+    Key? key,
+    required <span class="hljs-keyword">this</span>.data,
+    required Widget child,
+  }) : <span class="hljs-keyword">super</span>(key: key, child: child);
+
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">int</span> data; <span class="hljs-comment">//&#x9700;&#x8981;&#x5728;&#x5B50;&#x6811;&#x4E2D;&#x5171;&#x4EAB;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4FDD;&#x5B58;&#x70B9;&#x51FB;&#x6B21;&#x6570;</span>
+
+  <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4FBF;&#x6377;&#x65B9;&#x6CD5;&#xFF0C;&#x65B9;&#x4FBF;&#x5B50;&#x6811;&#x4E2D;&#x7684;widget&#x83B7;&#x53D6;&#x5171;&#x4EAB;&#x6570;&#x636E;</span>
+  <span class="hljs-keyword">static</span> ShareDataWidget? of(BuildContext context) {
+    <span class="hljs-comment">//return context.dependOnInheritedWidgetOfExactType&lt;ShareDataWidget&gt;();</span>
+    <span class="hljs-keyword">return</span> context
+        .getElementForInheritedWidgetOfExactType&lt;ShareDataWidget&gt;()
+        ?.widget <span class="hljs-keyword">as</span> ShareDataWidget;
+  }
+
+  <span class="hljs-comment">//&#x8BE5;&#x56DE;&#x8C03;&#x51B3;&#x5B9A;&#x5F53;data&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x662F;&#x5426;&#x901A;&#x77E5;&#x5B50;&#x6811;&#x4E2D;&#x4F9D;&#x8D56;data&#x7684;Widget</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-built_in">bool</span> updateShouldNotify(ShareDataWidget old) {
+    <span class="hljs-keyword">return</span> old.data != data;
+  }
+}
+</code></pre>
+<p>&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5B50;&#x7EC4;&#x4EF6;<code>_TestWidget</code>&#xFF0C;&#x5728;&#x5176;<code>build</code>&#x65B9;&#x6CD5;&#x4E2D;&#x5F15;&#x7528;<code>ShareDataWidget</code>&#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5728;&#x5176;<code>didChangeDependencies()</code> &#x56DE;&#x8C03;&#x4E2D;&#x6253;&#x5370;&#x65E5;&#x5FD7;</p>
+<pre><code class="lang-dart">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_TestWidget</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatefulWidget</span> </span>{
+  <span class="hljs-meta">@override</span>
+  __TestWidgetState createState() =&gt; __TestWidgetState();
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">__TestWidgetState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">_TestWidget</span>&gt; </span>{
+  <span class="hljs-meta">@override</span>
+  Widget build(BuildContext context) {
+    <span class="hljs-comment">//&#x4F7F;&#x7528;InheritedWidget&#x4E2D;&#x7684;&#x5171;&#x4EAB;&#x6570;&#x636E;</span>
+<span style="background-color: #FFFF0050;">
+    <span class="hljs-keyword">return</span> Text(ShareDataWidget.of(context)!.data.toString());
+</span>
+  }
+
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> didChangeDependencies() {
+    <span class="hljs-keyword">super</span>.didChangeDependencies();
+    <span class="hljs-comment">//&#x7236;&#x6216;&#x7956;&#x5148;widget&#x4E2D;&#x7684;InheritedWidget&#x6539;&#x53D8;(updateShouldNotify&#x8FD4;&#x56DE;true)&#x65F6;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</span>
+    <span class="hljs-comment">//&#x5982;&#x679C;build&#x4E2D;&#x6CA1;&#x6709;&#x4F9D;&#x8D56;InheritedWidget&#xFF0C;&#x5219;&#x6B64;&#x56DE;&#x8C03;&#x4E0D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dependencies change&quot;</span>);
+  }
+}
+</code></pre>
+<p><code>InheritedWidgetTestRoute</code>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x6BCF;&#x70B9;&#x51FB;&#x4E00;&#x6B21;&#xFF0C;&#x5C31;&#x5C06;<code>ShareDataWidget</code>&#x7684;&#x503C;&#x81EA;&#x589E;</p>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InheritedWidgetTestRoute</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatefulWidget</span> </span>{
+  ...
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_InheritedWidgetTestRouteState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">InheritedWidgetTestRoute</span>&gt; </span>{
+  <span class="hljs-built_in">int</span> count = <span class="hljs-number">0</span>;
+
+  <span class="hljs-meta">@override</span>
+  Widget build(BuildContext context) {
+    <span class="hljs-keyword">return</span> Center(
+<span style="background-color: #FFFF0050;">
+      child: ShareDataWidget( <span class="hljs-comment">//&#x4F7F;&#x7528;ShareDataWidget</span>
+</span>
+        data: count,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: &lt;Widget&gt;[
+            Padding(
+              padding: <span class="hljs-keyword">const</span> EdgeInsets.only(bottom: <span class="hljs-number">20.0</span>),
+              child: _TestWidget(), <span class="hljs-comment">//&#x5B50;widget&#x4E2D;&#x4F9D;&#x8D56;ShareDataWidget</span>
+            ),
+            ElevatedButton(
+              child: <span class="hljs-keyword">const</span> Text(<span class="hljs-string">&quot;Increment&quot;</span>),
+              <span class="hljs-comment">//&#x6BCF;&#x70B9;&#x51FB;&#x4E00;&#x6B21;&#xFF0C;&#x5C06;count&#x81EA;&#x589E;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x65B0;build,ShareDataWidget&#x7684;data&#x5C06;&#x88AB;&#x66F4;&#x65B0;</span>
+              onPressed: () =&gt; setState(() =&gt; ++count),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+</code></pre>
+<h1 id="2-inheritedwidget&#x7684;&#x539F;&#x7406;">2. InheritedWidget&#x7684;&#x539F;&#x7406;</h1>
+<h2 id="21-inheritedwidgets">2.1 _inheritedWidgets</h2>
+<pre><code class="lang-dart"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Element</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DiagnosticableTree</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">BuildContext</span>
+
+  <span class="hljs-title">Element</span>? <span class="hljs-title">_parent</span>;
+  <span class="hljs-title">PersistentHashMap</span>&lt;<span class="hljs-title">Type</span>, <span class="hljs-title">InheritedElement</span>&gt;? <span class="hljs-title">_inheritedWidgets</span>;
+  <span class="hljs-title">Set</span>&lt;<span class="hljs-title">InheritedElement</span>&gt;? <span class="hljs-title">_dependencies</span>;
+  <span class="hljs-title">bool</span> <span class="hljs-title">_hadUnsatisfiedDependencies</span> = <span class="hljs-title">false</span>;
+
+    /// <span class="hljs-title">Add</span> <span class="hljs-title">this</span> <span class="hljs-title">element</span> <span class="hljs-title">to</span> <span class="hljs-title">the</span> <span class="hljs-title">tree</span> <span class="hljs-title">in</span> <span class="hljs-title">the</span> <span class="hljs-title">given</span> <span class="hljs-title">slot</span> <span class="hljs-title">of</span> <span class="hljs-title">the</span> <span class="hljs-title">given</span> <span class="hljs-title">parent</span>.
+    @<span class="hljs-title">mustCallSuper</span>
+  <span class="hljs-title">void</span> <span class="hljs-title">mount</span>(<span class="hljs-title">Element</span>? <span class="hljs-title">parent</span>, <span class="hljs-title">Object</span>? <span class="hljs-title">newSlot</span>) </span>{
+    ...
+    _updateInheritance();
+    ...
+  }
+
+    <span class="hljs-comment"><span class="markdown">/// Transition from </span>the<span class="markdown"> &quot;inactive&quot; to </span>the<span class="markdown"> &quot;active&quot; lifecycle state.</span></span>
+    <span class="hljs-meta">@mustCallSuper</span>
+  <span class="hljs-keyword">void</span> activate() {
+    ...
+    _updateInheritance();
+        ...
+  }
+
+  <span class="hljs-keyword">void</span> _updateInheritance() {
+        ...
+    _inheritedWidgets = _parent?._inheritedWidgets;
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InheritedElement</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ProxyElement</span></span>{
+
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">Element</span>, <span class="hljs-built_in">Object</span>?&gt; _dependents = HashMap&lt;<span class="hljs-built_in">Element</span>, <span class="hljs-built_in">Object</span>?&gt;();
+
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> _updateInheritance() {
+    <span class="hljs-keyword">final</span> PersistentHashMap&lt;<span class="hljs-built_in">Type</span>, InheritedElement&gt; incomingWidgets =
+        _parent?._inheritedWidgets ?? <span class="hljs-keyword">const</span> PersistentHashMap&lt;<span class="hljs-built_in">Type</span>, InheritedElement&gt;.empty();
+    _inheritedWidgets = incomingWidgets.put(widget.runtimeType, <span class="hljs-keyword">this</span>);
+  }
+}
+</code></pre>
+<h3 id="inheritedwidgets">_inheritedWidgets</h3>
+<p><code>void _updateInheritance()</code>&#x4E3B;&#x8981;&#x8D1F;&#x8D23; <code>_inheritedWidgets</code>&#x8D4B;&#x503C;</p>
+<ol>
+<li>&#x8C03;&#x7528;&#x65F6;&#x673A;: <code>mount</code>&#x548C;<code>activate</code>&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x666E;&#x901A;&#x7684;<code>Element</code>&#xFF0C;<code>_inheritedWidgets</code>&#x53EA;&#x662F;&#x4ECE;<code>_parent</code>&#x8BFB;&#x53D6;&#x3002;</li>
+<li><code>InheritedElement</code>&#x4E2D;&#xFF0C;<code>_inheritedWidgets</code>&#x4ECE;<code>_parent</code>&#x8BFB;&#x53D6;&#x4E3A;&#x7A7A;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x3002;&#x5E76;&#x5B58;&#x50A8;&#x3002;key&#x4E3A;<code>widget.runtimeType</code>,value&#x4E3A;&#x5F53;&#x524D;&#x7684;<code>InheritedElement</code>&#x3002;</li>
+</ol>
+<blockquote>
+<p>_inheritedWidgets &#x65B9;&#x4FBF;&#x89C2;&#x5BDF;&#x8005;&#x5FEB;&#x901F;&#x83B7;&#x53D6;&#x5230;&#x5BF9;&#x5E94;&#x7684;InheritedElement&#xFF0C;&#x4ECE;&#x800C;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;</p>
+</blockquote>
+<h3 id="dependents">_dependents</h3>
+<p><code>InheritedElement</code>&#x4E2D;&#x7684;<code>_dependents</code>&#xFF0C;&#x5B58;&#x50A8;&#x4E86;&#x89C2;&#x5BDF;&#x8005;</p>
+<blockquote>
+<p>&#x9700;&#x8981;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x904D;&#x5386;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;&#x901A;&#x77E5;&#x89C2;&#x5BDF;&#x8005;&#x66F4;&#x65B0;</p>
+</blockquote>
+<h3 id="dependencies">_dependencies</h3>
+<p><code>Set&lt;InheritedElement&gt;? _dependencies;</code>&#x89C2;&#x5BDF;&#x8005;&#x5B58;&#x50A8;&#x4E86;&#x4ED6;&#x6240;&#x4F9D;&#x8D56;&#x7684; <code>InheritedElement</code>&#x3002;</p>
+<blockquote>
+<p><code>class _UbiquitousInheritedElement extends InheritedElement</code>&#x4E2D;&#x6709;&#x7528;&#x5230;&#x3002;</p>
+<p>&#x53BB;&#x6389;&#x4E86;&#xFF0C;_dependents&#x3002;&#x8FD9;&#x6837;&#x4FDD;&#x8BC1;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;&#x66F4;&#x5FEB;&#x901F;&#x3002;&#x4F46;&#x662F;&#x66F4;&#x65B0;&#x4F1A;&#x53D8;&#x6162;&#x3002;</p>
+<p><a href="#_UbiquitousInheritedElement">&#x53EF;&#x4EE5;&#x770B;&#x8FD9;&#x91CC;</a></p>
+</blockquote>
+<h2 id="22-&#x6CE8;&#x518C;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;">2.2 &#x6CE8;&#x518C;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;</h2>
+<p><code>T? dependOnInheritedWidgetOfExactType&lt;T extends InheritedWidget&gt;({ Object? aspect });</code></p>
+<pre><code class="lang-dart"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Element</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DiagnosticableTree</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">BuildContext</span>
+    @<span class="hljs-title">override</span>
+  <span class="hljs-title">T</span>? <span class="hljs-title">dependOnInheritedWidgetOfExactType</span>&lt;<span class="hljs-title">T</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedWidget</span>&gt;(</span>{<span class="hljs-built_in">Object</span>? aspect}) {
+    <span class="hljs-keyword">assert</span>(_debugCheckStateIsActiveForAncestorLookup());
+      <span class="hljs-comment">//&lt;hl&gt; 1. &#x67E5;&#x627E;InheritedElement&#x7C7B;&#x578B;&#x7684;&#x7956;&#x5148;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">final</span> InheritedElement? ancestor = _inheritedWidgets == <span class="hljs-keyword">null</span> ? <span class="hljs-keyword">null</span> : _inheritedWidgets![T];
+    <span class="hljs-keyword">if</span> (ancestor != <span class="hljs-keyword">null</span>) {
+      <span class="hljs-keyword">return</span> dependOnInheritedElement(ancestor, aspect: aspect) <span class="hljs-keyword">as</span> T;
+    }
+    _hadUnsatisfiedDependencies = <span class="hljs-keyword">true</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+  }
+
+      <span class="hljs-meta">@override</span>
+  InheritedWidget dependOnInheritedElement(InheritedElement ancestor, { <span class="hljs-built_in">Object</span>? aspect }) {
+    <span class="hljs-comment">//&lt;hl&gt; 2. &#x521B;&#x5EFA;_dependencies&#x7528;&#x6765;&#x5B58;&#x50A8;&#x5F53;&#x524D;element&#x4F9D;&#x8D56;&#x4E86;&#x54EA;&#x4E9B;InheritedElement</span>
+    _dependencies ??= HashSet&lt;InheritedElement&gt;();
+    _dependencies!.add(ancestor); <span class="hljs-comment">//</span>
+    ancestor.updateDependencies(<span class="hljs-keyword">this</span>, aspect); <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x5230;InheritedElement&#x4E2D;&#x3002;</span>
+    <span class="hljs-comment">//&lt;hl&gt; 4. &#x8FD4;&#x56DE; ancestor&#xFF08;InheritedWidget&#x7C7B;&#x578B;&#x7684;&#x7956;&#x5148;&#x8282;&#x70B9;&#xFF09;</span>
+    <span class="hljs-keyword">return</span> ancestor.widget <span class="hljs-keyword">as</span> InheritedWidget;
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InheritedElement</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ProxyElement</span></span>{
+
+  <span class="hljs-keyword">final</span> <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">Element</span>, <span class="hljs-built_in">Object</span>?&gt; _dependents = HashMap&lt;<span class="hljs-built_in">Element</span>, <span class="hljs-built_in">Object</span>?&gt;();
+
+        <span class="hljs-meta">@protected</span>
+  <span class="hljs-keyword">void</span> updateDependencies(<span class="hljs-built_in">Element</span> dependent, <span class="hljs-built_in">Object</span>? aspect) {
+    setDependencies(dependent, <span class="hljs-keyword">null</span>);
+  }
+
+    <span class="hljs-meta">@protected</span>
+  <span class="hljs-keyword">void</span> setDependencies(<span class="hljs-built_in">Element</span> dependent, <span class="hljs-built_in">Object</span>? value) {
+    <span class="hljs-comment">//&lt;hl&gt; 3. InheritedElement&#x4E2D;&#x7684;_dependents&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x5BF9;&#x5E94;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x3002;</span>
+    _dependents[dependent] = value;  <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x5230;&#x5BF9;&#x5E94;&#x7684;map&#x79CD;&#x3002; &#x8FD9;&#x91CC;value&#x4E3A;&#x7A7A;&#x3002;</span>
+  }
+}
+</code></pre>
+<p>&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF1A;</p>
+<p><code>Element</code>&#xFF08;&#x89C2;&#x5BDF;&#x8005;&#xFF09;&#x4E2D;&#x7684;<code>_dependencies</code>&#x5B58;&#x50A8;&#x4E86;&#x4F7F;&#x7528;&#x5230;&#x7684;<code>InheritedElement</code></p>
+<p><code>InheritedElement</code>&#x7684;<code>_dependents</code>&#x5B58;&#x50A8;&#x4E86;&#x6CE8;&#x518C;&#x7684;&#x89C2;&#x5BDF;&#x8005;<code>Element</code></p>
+<h2 id="23-&#x66F4;&#x65B0;&#x76D1;&#x542C;">2.3 &#x66F4;&#x65B0;&#x76D1;&#x542C;</h2>
+<pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InheritedElement</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ProxyElement</span></span>{
+  <span class="hljs-comment">//&#x91CD;&#x5199;&#x4E86;updated&#x65B9;&#x6CD5;</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> updated(InheritedWidget oldWidget) {
+    <span class="hljs-keyword">if</span> ((widget <span class="hljs-keyword">as</span> InheritedWidget).updateShouldNotify(oldWidget)) {
+      <span class="hljs-keyword">super</span>.updated(oldWidget); <span class="hljs-comment">// super&#x4E2D;&#x8C03;&#x7528;&#x4E86;notifyClients</span>
+    }
+  }
+
+  <span class="hljs-comment">//&#x904D;&#x5386;&#x6BCF;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x8005;</span>
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> notifyClients(InheritedWidget oldWidget) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">final</span> <span class="hljs-built_in">Element</span> dependent <span class="hljs-keyword">in</span> _dependents.keys) {
+      notifyDependent(oldWidget, dependent); 
+    }
+  }
+
+  <span class="hljs-comment">//&#x8C03;&#x7528;&#x575A;&#x633A;&#x7740;didChangeDependencies&#x65B9;&#x6CD5;</span>
+  <span class="hljs-meta">@protected</span>
+  <span class="hljs-keyword">void</span> notifyDependent(covariant InheritedWidget oldWidget, <span class="hljs-built_in">Element</span> dependent) {
+    dependent.didChangeDependencies();
+  }
+}
+
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Element</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DiagnosticableTree</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">BuildContext</span> </span>{
+
+  <span class="hljs-comment">//&#x6807;&#x8BB0;&#x4E3A;_dirty</span>
+  <span class="hljs-meta">@mustCallSuper</span>
+  <span class="hljs-keyword">void</span> didChangeDependencies() {
+    markNeedsBuild();
+  }
+
+  <span class="hljs-keyword">void</span> markNeedsBuild() {
+    <span class="hljs-keyword">if</span> (dirty) {
+      <span class="hljs-keyword">return</span>;
+    }
+    _dirty = <span class="hljs-keyword">true</span>;
+    owner!.scheduleBuildFor(<span class="hljs-keyword">this</span>);
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BuildOwner</span> </span>{
+<span class="hljs-keyword">void</span> scheduleBuildFor(<span class="hljs-built_in">Element</span> element) {
+    _dirtyElements.add(element); <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x5230;dirtyElements&#x5217;&#x8868;&#x4E2D;&#x3002;</span>
+    element._inDirtyList = <span class="hljs-keyword">true</span>; 
+  }
+}
+</code></pre>
+<h1 id="3&#x603B;&#x7ED3;">3.&#x603B;&#x7ED3;</h1>
+<blockquote>
+<p>_inheritedWidgets&#x5B58;&#x50A8;InheritedElement&#xFF0C;&#x65B9;&#x4FBF;&#x89C2;&#x5BDF;&#x8005;&#x5FEB;&#x901F;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;InheritedElement</p>
+<p>_dependents &#x5B58;&#x50A8;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;InheritedElement&#x901A;&#x8FC7;&#x904D;&#x5386;&#x901A;&#x77E5;&#x89C2;&#x5BDF;&#x8005;&#x66F4;&#x65B0;</p>
+</blockquote>
+<ul>
+<li>&#x672C;&#x8EAB;&#x6240;&#x6709;&#x7684;Element&#x90FD;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;map&#x3002;&#xFF08;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4F1A;&#x5148;&#x4ECE;_parent&#x83B7;&#x53D6;&#xFF09;<ul>
+<li>PersistentHashMap<type, inheritedelement="">? _inheritedWidgets;</type,></li>
+<li>element&#x7C7B;&#x578B;&#x4E3A;key&#x3002;</li>
+</ul>
+</li>
+<li>&#x6BCF;&#x4E00;&#x4E2A;InheritedElement&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;map&#x3002;<ul>
+<li>final Map<element, object?=""> _dependents = HashMap<element, object?="">();</element,></element,></li>
+<li>&#x4EE5;&#x8C03;&#x7528;&#x8005;&#x7684;element&#x4E3A;key&#xFF0C;value&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5F53;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;InheritedElement&#xFF0C;&#x8C03;&#x7528;mount&#x65F6;&#x5C31;&#x4F1A;&#x52A0;&#x5165;&#x5230;_inheritedWidgets&#x4E2D;&#x3002;<ul>
+<li>&#x67E5;&#x627E;&#x7684;&#x65F6;&#x5019;&#x901A;&#x8FC7;&#x7C7B;&#x578B;&#x76F4;&#x63A5;&#x5728;map&#x4E2D;&#x627E;&#x51FA;&#x3002;</li>
+</ul>
+</li>
+<li>&#x8C03;&#x7528;dependOnInheritedWidgetOfExactType&#x83B7;&#x53D6;&#x503C;&#x7684;&#x65F6;&#x5019;<ul>
+<li>_inheritedWidgets&#x4E2D;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;InheritedElement</li>
+<li>&#x5C06;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x5230;InheritedElement&#x5BF9;&#x5E94;&#x7684;_dependents&#x5B57;&#x5178;&#x4E2D;</li>
+<li>&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;InheritedElement</li>
+</ul>
+</li>
+<li>&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x8C03;&#x7528;InheritedWidget&#x7684;update&#x7684;&#x65F6;&#x5019;<ul>
+<li>_dependents.keys&#x83B7;&#x53D6;&#x5B58;&#x50A8;&#x7684;element&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5176;<code>didChangeDependencies</code>&#x65B9;&#x6CD5;&#x3002;</li>
+<li>didChangeDependencies --&gt; markNeedsBuild --&gt; _dirty = true;</li>
+</ul>
+</li>
+</ul>
+<h1 id="4-&#x5E94;&#x8BE5;&#x5728;didchangedependencies&#x4E2D;&#x505A;&#x4EC0;&#x4E48;&#xFF1F;">4. &#x5E94;&#x8BE5;&#x5728;didChangeDependencies()&#x4E2D;&#x505A;&#x4EC0;&#x4E48;&#xFF1F;</h1>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5B50; widget &#x5F88;&#x5C11;&#x4F1A;&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x4F9D;&#x8D56;&#x6539;&#x53D8;&#x540E; Flutter &#x6846;&#x67B6;&#x4E5F;&#x90FD;&#x4F1A;&#x8C03;&#x7528;<code>build()</code>&#x65B9;&#x6CD5;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x7EC4;&#x4EF6;&#x6811;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x4F9D;&#x8D56;&#x6539;&#x53D8;&#x540E;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x6602;&#x8D35;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD9;&#x65F6;&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x5728;&#x6B64;&#x65B9;&#x6CD5;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x6BCF;&#x6B21;<code>build()</code>&#x90FD;&#x6267;&#x884C;&#x8FD9;&#x4E9B;&#x6602;&#x8D35;&#x64CD;&#x4F5C;&#x3002;</p>
+<h1 id="5-&#x5176;&#x4ED6;">5. &#x5176;&#x4ED6;</h1>
+<h2 id="ubiquitousinheritedelement">_UbiquitousInheritedElement</h2>
+<pre><code class="lang-dart"><span class="hljs-comment"><span class="markdown">/// An [InheritedElement] that has hundreds of dependencies </span>but<span class="markdown"> </span>will<span class="markdown"></span></span>
+<span class="hljs-comment"><span class="markdown">/// infrequently change. This provides </span>a<span class="markdown"> performance tradeoff where building</span></span>
+<span class="hljs-comment"><span class="markdown">/// </span>the<span class="markdown"> [Widget]s is faster </span>but<span class="markdown"> performing updates is slower.</span></span>
+<span class="hljs-comment"><span class="markdown">///</span></span>
+<span class="hljs-comment"><span class="markdown">/// |                     | _UbiquitousInheritedElement | InheritedElement |</span></span>
+<span class="hljs-comment"><span class="markdown">/// |---------------------|------------------------------|------------------|</span></span>
+<span class="hljs-comment"><span class="markdown">/// | insert (best case)  | O(1)                         | O(1)             |</span></span>
+<span class="hljs-comment"><span class="markdown">/// | insert (worst case) | O(1)                         | O(n)             |</span></span>
+<span class="hljs-comment"><span class="markdown">/// | search (best case)  | O(n)                         | O(1)             |</span></span>
+<span class="hljs-comment"><span class="markdown">/// | search (worst case) | O(n)                         | O(n)             |</span></span>
+<span class="hljs-comment"><span class="markdown">///</span></span>
+<span class="hljs-comment"><span class="markdown">/// Insert happens when building </span>the<span class="markdown"> [Widget] tree, search happens when updating</span></span>
+<span class="hljs-comment"><span class="markdown">/// [Widget]s.</span></span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_UbiquitousInheritedElement</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">InheritedElement</span> </span>{
+  <span class="hljs-comment"><span class="markdown">/// Creates </span>an<span class="markdown"> element that uses </span>the<span class="markdown"> given widget as its configuration.</span></span>
+  _UbiquitousInheritedElement(<span class="hljs-keyword">super</span>.widget);
+
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> setDependencies(<span class="hljs-built_in">Element</span> dependent, <span class="hljs-built_in">Object</span>? value) {
+    <span class="hljs-comment">// This is where the cost of [InheritedElement] is incurred during build</span>
+    <span class="hljs-comment">// time of the widget tree. Omitting this bookkeeping is where the</span>
+    <span class="hljs-comment">// performance savings come from.</span>
+    <span class="hljs-keyword">assert</span>(value == <span class="hljs-keyword">null</span>);
+  }
+
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-built_in">Object</span>? getDependencies(<span class="hljs-built_in">Element</span> dependent) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+  }
+
+  <span class="hljs-meta">@override</span>
+  <span class="hljs-keyword">void</span> notifyClients(InheritedWidget oldWidget) {
+    _recurseChildren(<span class="hljs-keyword">this</span>, (<span class="hljs-built_in">Element</span> element) {
+      <span class="hljs-keyword">if</span> (element.doesDependOnInheritedElement(<span class="hljs-keyword">this</span>)) {
+        notifyDependent(oldWidget, element);
+      }
+    });
+  }
+
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> _recurseChildren(<span class="hljs-built_in">Element</span> element, ElementVisitor visitor) {
+    element.visitChildren((<span class="hljs-built_in">Element</span> child) {
+      _recurseChildren(child, visitor);
+    });
+    visitor(element);
+  }
+}
+</code></pre>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<blockquote>
+<p> <a href="https://zhuanlan.zhihu.com/p/345546970" target="_blank">&#x3010;&#x8001;&#x5B5F;Flutter&#x3011;&#x6E90;&#x7801;&#x5206;&#x6790;&#x7CFB;&#x5217;&#x4E4B;InheritedWidget</a></p>
+<p><a href="https://blog.csdn.net/jdsjlzx/article/details/123320566" target="_blank">&#x4E00;&#x6587;&#x641E;&#x61C2;InheritedWidget&#x5C40;&#x90E8;&#x5237;&#x65B0;&#x673A;&#x5236;</a></p>
+<p><a href="https://juejin.cn/post/6844903934138515469" target="_blank">flutter&#x9632;&#x6B62;widget rebuild&#x7EC8;&#x6781;&#x89E3;&#x51B3;&#x529E;&#x6CD5;</a></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="02Provider基本使用.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 02Provider基本使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01InheritedWidget","level":"1.3.1.2.1","depth":4,"next":{"title":"02Provider基本使用","level":"1.3.1.2.2","depth":4,"path":"flutter/状态管理/01Provider/02Provider基本使用.md","ref":"flutter/状态管理/01Provider/02Provider基本使用.md","articles":[]},"previous":{"title":"01Provider","level":"1.3.1.2","depth":3,"ref":"","articles":[{"title":"01InheritedWidget","level":"1.3.1.2.1","depth":4,"path":"flutter/状态管理/01Provider/01InheritedWidget.md","ref":"flutter/状态管理/01Provider/01InheritedWidget.md","articles":[]},{"title":"02Provider基本使用","level":"1.3.1.2.2","depth":4,"path":"flutter/状态管理/01Provider/02Provider基本使用.md","ref":"flutter/状态管理/01Provider/02Provider基本使用.md","articles":[]},{"title":"03Provider源码解析","level":"1.3.1.2.3","depth":4,"path":"flutter/状态管理/01Provider/03Provider源码解析.md","ref":"flutter/状态管理/01Provider/03Provider源码解析.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search-pro","accordion","expandable-chapters","livereload"],"pluginsConfig":{"livereload":{},"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flutter/状态管理/01Provider/01InheritedWidget.md","mtime":"2023-06-22T08:54:24.989Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-22T11:21:45.192Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
