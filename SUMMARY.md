@@ -10,10 +10,10 @@
     - [插入排序](algorithm/sorting/insertion_sort.md)
 - flutter
   - 状态管理
-    - [flutter的状态管理](flutter/状态管理/前言.md)
-    - Provider
+    - [01flutter的状态管理](flutter/状态管理/前言.md)
+    - 02Provider
       - [01 inheritedwidget](flutter/状态管理/Provider/01InheritedWidget.md)
       - [02Provider基本使用](flutter/状态管理/Provider/02Provider基本使用.md)
       - [03Provider源码解析](flutter/状态管理/Provider/03Provider源码解析.md)
-    - [BLoc](flutter/状态管理/BLoC.md)
+    - [03BLoc](flutter/状态管理/BLoC.md)
 

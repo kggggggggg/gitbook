@@ -244,7 +244,7 @@ class InheritedElement extends ProxyElement{
   @override
   void updated(InheritedWidget oldWidget) {
     if ((widget as InheritedWidget).updateShouldNotify(oldWidget)) {
-      super.updated(oldWidget); --super调用了notifyClients
+      super.updated(oldWidget); // super中调用了notifyClients
     }
   }
 	
