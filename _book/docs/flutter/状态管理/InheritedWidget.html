@@ -17,7 +17,7 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -30,10 +30,6 @@
             
                 
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -331,12 +327,13 @@
 <p>&#x91CD;&#x5199;&#x4E86;updated&#x65B9;&#x6CD5;&#xFF0C;&#x8C03;&#x7528;InheritedWidget&#x7684;setStatus&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5BF9;&#x6240;&#x6709;&#x5B50;widget&#x8C03;&#x7528;build&#x3002;&#x800C;&#x662F;&#x5BF9;&#x6CE8;&#x518C;&#x7684;&#x76D1;&#x542C;&#x8C03;&#x7528;&#x3002;</p>
 <pre><code class="lang-dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InheritedElement</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ProxyElement</span></span>{
   <span class="hljs-meta">@override</span>
+<span style="background-color: #FFFF0050;">
   <span class="hljs-keyword">void</span> updated(InheritedWidget oldWidget) {
     <span class="hljs-keyword">if</span> ((widget <span class="hljs-keyword">as</span> InheritedWidget).updateShouldNotify(oldWidget)) {
       <span class="hljs-keyword">super</span>.updated(oldWidget); --&#x4F1A;&#x8C03;&#x7528;notifyClients
     }
   }
-
+</span>
   <span class="hljs-meta">@override</span>
   <span class="hljs-keyword">void</span> notifyClients(InheritedWidget oldWidget) {
     <span class="hljs-keyword">assert</span>(_debugCheckOwnerBuildTargetExists(<span class="hljs-string">&apos;notifyClients&apos;</span>));
@@ -347,7 +344,7 @@
         <span class="hljs-keyword">while</span> (ancestor != <span class="hljs-keyword">this</span> &amp;&amp; ancestor != <span class="hljs-keyword">null</span>) {
           ancestor = ancestor._parent;
         }
-        <span class="hljs-keyword">return</span> ancestor == <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">return</span> ancestor == <span class="hljs-keyword">this</span>; 
       }());
       <span class="hljs-comment">// check that it really depends on us</span>
       <span class="hljs-keyword">assert</span>(dependent._dependencies!.contains(<span class="hljs-keyword">this</span>));
@@ -552,7 +549,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"InheritedWidget","level":"2.1.1.1","depth":3,"previous":{"title":"状态管理","level":"2.1.1","depth":2,"path":"README.md","ref":"README.md","articles":[{"title":"InheritedWidget","level":"2.1.1.1","depth":3,"path":"flutter/状态管理/InheritedWidget.md","ref":"flutter/状态管理/InheritedWidget.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","search-pro","accordion","expandable-chapters"],"pluginsConfig":{"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flutter/状态管理/InheritedWidget.md","mtime":"2023-06-18T11:34:38.570Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-18T12:29:54.048Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"InheritedWidget","level":"2.1.1.1","depth":3,"previous":{"title":"状态管理","level":"2.1.1","depth":2,"path":"README.md","ref":"README.md","articles":[{"title":"InheritedWidget","level":"2.1.1.1","depth":3,"path":"flutter/状态管理/InheritedWidget.md","ref":"flutter/状态管理/InheritedWidget.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search-pro","accordion","expandable-chapters"],"pluginsConfig":{"search-pro":{},"accordion":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flutter/状态管理/InheritedWidget.md","mtime":"2023-06-19T09:38:00.140Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-19T09:47:17.304Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -560,10 +557,6 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
